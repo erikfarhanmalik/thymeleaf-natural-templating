@@ -15,25 +15,8 @@ These term is created to minimize confusion in this guide:
 
 # Code structure #
 The thymeleaf resource location and structure in this guide sample code are defined like this:    
-	\src\main\resources  
-		- static  
-		|---- css  
-		|  |---- self-defined.css  
-		|  
-		|---- js  
-		|  |---- self-defined.js  
-		|  
-		- templates  
-		|---- natural
-		|  |---- ajax-contract
-		|  |  |---- employee.json
-		|  |  |---- employee-403.json
-		|  |
-		|  |---- index.html  
-		|  |---- list-page.html  
-		|  
-		|---- index.html  
-		|---- list-page.html  
+\src\main\resources:  
+![alt text](https://raw.githubusercontent.com/erikfarhanmalik/thymeleaf-natural-templating/master/screenshot/file-structure.JPG)
 
 - `static` folder will be used for resources such as css and js files.
 - `templates` folder will be used for thymeleaf template root location folder.
