@@ -1,0 +1,18 @@
+{
+	"bundle": "app",
+	"dependencies": [
+		"materialize"
+	],
+	"assets": [
+		{
+			"locations": {
+				"classpath": "static/css/self-defined.css"
+			}
+		},
+		{
+			"locations": {
+				"classpath": "static/js/self-defined.js"
+			}
+		}
+	]
+}

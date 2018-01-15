@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:ddl="http://www.thymeleaf.org/dandelion"
+	ddl:bundle-includes="app">
+<head>
+<meta charset="ISO-8859-1"/>
+	<title th:replace="natural/list-page::title"></title>
+</head>
+<body>
+	<span th:text="${user.name}"></span>
+	<br/>
+	<span th:text="${user.role}"></span>
+	<br/>	
+	<span>
+		employee:
+	</span>
+	<div th:each="employee : ${employees}">
+		<span th:text="${employee}"></span>
+		<br/>
+	</div>
+</body>
+</html>
