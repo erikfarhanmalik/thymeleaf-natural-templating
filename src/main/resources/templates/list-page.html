@@ -7,16 +7,11 @@
 	<title th:replace="natural/list-page::title"></title>
 </head>
 <body>
-	<span th:text="${user.name}"></span>
-	<br/>
-	<span th:text="${user.role}"></span>
-	<br/>	
-	<span>
-		employee:
-	</span>
-	<div th:each="employee : ${employees}">
-		<span th:text="${employee}"></span>
-		<br/>
-	</div>
+	<div th:replace="natural/index::navigation-bar"></div>
+	<div th:replace="natural/list-page::content"></div>
+	
+	<th:block ddl:placeholder-include="js"></th:block>
+    
+	<div th:replace="natural/list-page::inline-script-container"></div>
 </body>
 </html>
