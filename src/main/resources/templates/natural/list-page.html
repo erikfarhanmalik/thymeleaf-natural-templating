@@ -90,11 +90,10 @@
 	<script type="text/javascript" src="../../static/js/self-defined.js"></script>
 	<script type="text/javascript">
 		function doSomeAjaxCall() {
-			//can use : https://github.com/erikfarhanmalik/rest-api-dummy
 			$.ajax(
 					{
 						method : "GET",
-						url : /*[[@{/api/employee/2}]]*/"http://localhost:9000/api/employee"
+						url : "http://localhost:9000/api/employee"
 					}).done(function(response) {
 				$("#ajax-response").html(JSON.stringify(response));
 			});
