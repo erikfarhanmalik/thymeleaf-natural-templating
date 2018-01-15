@@ -97,8 +97,12 @@ Then, you should add the needed thymeleaf specific attribute tag into every natu
 - Modify all link by add like by add th:href like `<a class="waves-effect waves-light btn-large" href="./list-page.html" th:href="@{/list-page}">` so that the href target value will take the value from server instead from the template when it's rendered using template engine.
 - Bundle needed resource (CSS and JS) using dandelion
 - Add th:fragment="inline-script-container" (`<script type="text/javascript" th:fragment="inline-script-container">`) for every in line java script.
-- Add `th:fragment` for element that will be included in real thymeleaf template, for example:
+- Add `th:fragment` for element that will be included in real thymeleaf template, for example:  
+
+```html
 <div class="navbar-fixed" th:fragment="navigation-bar">
 <div class="content" th:fragment="content">
+```
+
 - In the real template place the elements from the natural template, and arrange those elements like in [index.html](https://github.com/erikfarhanmalik/thymeleaf-natural-templating/blob/master/src/main/resources/templates/index.html) template.
 
